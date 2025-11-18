@@ -1,0 +1,197 @@
+/* src/index.css */
+
+/* optional font import (keeps M3 look) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* If you use Tailwind, keep these — otherwise they harmlessly stay */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Material 3 inspired base tokens */
+:root{
+  --md-surface: #ffffff;
+  --md-on-surface: #111827;
+  --md-muted: #6b7280;
+  --md-primary: #0f172a;
+  --md-elev-1: 0 6px 18px rgba(15,23,42,0.06);
+  --md-elev-2: 0 12px 32px rgba(15,23,42,0.08);
+  --rounded-lg: 12px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #f7f8fb;
+  color:var(--md-on-surface);
+}
+
+/* Header */
+.header {
+  background: var(--md-surface);
+  border-bottom: 1px solid #eef1f6;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+.header-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:10px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand {
+  font-weight:700;
+  font-size:20px;
+  color:var(--md-primary);
+  text-decoration:none;
+}
+.header-controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* Search */
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#f2f4f7;
+  padding:8px 12px;
+  border-radius:14px;
+  width:420px;
+  box-shadow: var(--md-elev-1);
+}
+.search-input{
+  border:0;
+  background:transparent;
+  outline:none;
+  width:100%;
+  font-size:14px;
+}
+
+/* Small buttons */
+.btn{
+  padding:8px 12px;
+  border-radius:12px;
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  border: none;
+}
+.btn-ghost{ background:transparent; color:var(--md-primary) }
+.btn-primary{ background:var(--md-primary); color:white; border-radius:12px; padding:8px 14px}
+
+/* Category bar (separate sticky bar) */
+.cat-bar{
+  background:transparent;
+  padding:12px 20px;
+  position:sticky;
+  top:64px; /* below header */
+  z-index:50;
+}
+.cat-scroll{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  gap:10px;
+  overflow:auto;
+  padding-bottom:6px;
+}
+.cat-pill{
+  padding:10px 14px;
+  border-radius:999px;
+  background:#ffffff;
+  box-shadow: var(--md-elev-1);
+  white-space:nowrap;
+  color:var(--md-primary);
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Grid Layouts */
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:24px 20px;
+}
+
+/* Category section */
+.category-block{
+  margin-top:18px;
+  margin-bottom:8px;
+}
+.category-title{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+/* Product card */
+.prod-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:18px;
+}
+.prod-card{
+  background:var(--md-surface);
+  border-radius:var(--rounded-lg);
+  padding:12px;
+  box-shadow: var(--md-elev-1);
+  text-decoration:none;
+  color:inherit;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.prod-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--md-elev-2);
+}
+.prod-img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+.prod-title{ font-weight:600; margin-bottom:6px; }
+.prod-price{ color:var(--md-muted); font-weight:600; }
+
+/* layout for hero */
+.hero{
+  background:transparent;
+  padding-top:32px;
+  padding-bottom:18px;
+}
+.hero .hero-inner{ display:flex; gap:24px; align-items:center; justify-content:space-between; }
+.hero h1{ font-size:40px; margin:0 0 8px; font-weight:700; }
+.hero p{ color:var(--md-muted); margin:0 0 12px; }
+
+/* WhatsApp floating */
+.whatsapp-fab{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:white;
+  width:56px;
+  height:56px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 10px 30px rgba(37,211,102,0.18);
+  z-index:80;
+}
+
+/* responsive tweaks */
+@media (max-width:880px){
+  .search-box{ width:200px }
+  .header-inner{ padding:10px; }
+  .hero .hero-inner{ flex-direction:column; align-items:flex-start; }
+}
