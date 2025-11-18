@@ -36,11 +36,17 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div>
-            <h1>PrintExpress</h1>
-            <p>High-quality print services — cards, banners, books and more.</p>
-          </div>
-          <div style={{minWidth:240, textAlign:"right"}}>
-            <img alt="PE" src="https://i.imgur.com/aw7Z3l1.png" style={{width:120, borderRadius:12, boxShadow:"var(--md-elev-2)"}} />
+           <img 
+  alt="PrintExpress Banner"
+  src="/banner.png"
+  style={{
+    width: "100%",
+    borderRadius: 20,
+    boxShadow: "0 8px 20px rgba(0,0,0,0.12)"
+  }}
+/>
+
+
           </div>
         </div>
       </section>
