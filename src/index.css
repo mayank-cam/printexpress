@@ -3,7 +3,7 @@
 /* optional font import (keeps M3 look) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* If you use Tailwind, keep these — otherwise they harmlessly stay */
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,10 +19,8 @@
   --rounded-lg: 12px;
 }
 
-*{box-sizing:border-box}
-html, body {
-  min-height: 100%;
-}
+*{ box-sizing:border-box }
+html, body { min-height: 100%; }
 
 body{
   margin:0;
@@ -40,7 +38,7 @@ body{
   z-index: 60;
 }
 .header-inner{
-  max-width:1100px;
+  max-width:1300px;
   margin:0 auto;
   padding:10px 20px;
   display:flex;
@@ -89,18 +87,18 @@ body{
   border: none;
 }
 .btn-ghost{ background:transparent; color:var(--md-primary) }
-.btn-primary{ background:var(--md-primary); color:white; border-radius:12px; padding:8px 14px}
+.btn-primary{ background:var(--md-primary); color:white; padding:8px 14px }
 
-/* Category bar (separate sticky bar) */
+/* Category bar */
 .cat-bar{
   background:transparent;
   padding:12px 20px;
   position:sticky;
-  top:64px; /* below header */
+  top:64px;
   z-index:50;
 }
 .cat-scroll{
-  max-width:1100px;
+  max-width:1300px;
   margin:0 auto;
   display:flex;
   gap:10px;
@@ -114,16 +112,18 @@ body{
   box-shadow: var(--md-elev-1);
   white-space:nowrap;
   color:var(--md-primary);
-  text-decoration:none;
   font-weight:600;
+  text-decoration:none;
 }
 
-/* Grid Layouts */
-.container{
-  max-width:1100px;
+/* Main container */
+/* REPLACE the old .container with this */
+.main-container {
+  max-width:1300px;
   margin:0 auto;
   padding:24px 20px;
 }
+
 
 /* Category section */
 .category-block{
@@ -136,7 +136,7 @@ body{
   margin-bottom:12px;
 }
 
-/* Product card */
+/* Product grid */
 .prod-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -165,15 +165,27 @@ body{
 .prod-title{ font-weight:600; margin-bottom:6px; }
 .prod-price{ color:var(--md-muted); font-weight:600; }
 
-/* layout for hero */
+/* Hero section */
 .hero{
   background:transparent;
   padding-top:32px;
   padding-bottom:18px;
 }
-.hero .hero-inner{ display:flex; gap:24px; align-items:center; justify-content:space-between; }
-.hero h1{ font-size:40px; margin:0 0 8px; font-weight:700; }
-.hero p{ color:var(--md-muted); margin:0 0 12px; }
+.hero .hero-inner{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  justify-content:space-between;
+}
+.hero h1{
+  font-size:40px;
+  margin:0 0 8px;
+  font-weight:700;
+}
+.hero p{
+  color:var(--md-muted);
+  margin:0 0 12px;
+}
 
 /* WhatsApp floating */
 .whatsapp-fab{
@@ -192,9 +204,24 @@ body{
   z-index:80;
 }
 
-/* responsive tweaks */
+/* Responsive tweaks */
 @media (max-width:880px){
-  .search-box{ width:200px }
+  .search-box{ width:200px; }
   .header-inner{ padding:10px; }
-  .hero .hero-inner{ flex-direction:column; align-items:flex-start; }
+  .hero .hero-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+.active-pill {
+  background: #0f172a;
+  color: white !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transform: scale(1.05);
+}
+.cat-pill {
+  transition: 0.25s ease;
+}
+.cat-pill:hover {
+  background: #e2e8f0;
 }
