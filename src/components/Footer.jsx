@@ -202,7 +202,7 @@ export default function Footer() {
               <h3 className="footer-heading">Contact Us</h3>
 
               <p className="contact-item">📞 +91 9608632832</p>
-              <p className="contact-item">✉️ info@printexpress.in</p>
+              <p className="contact-item">✉️ printexpress391@gmail.com</p>
               <p className="contact-item">📍 C-391, Sector-10, Noida – 201301</p>
 
               <a
