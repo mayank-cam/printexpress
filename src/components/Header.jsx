@@ -56,7 +56,7 @@ export default function Header() {
           </div>
 
           <div style={{display:"flex", gap:8, alignItems:"center"}}>
-            <a className="btn btn-ghost" href={"https://wa.me/919608632832?text=Hello%20PrintExpress"} target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn btn-ghost" href={"https://wa.me/918826615465?text=Hello%20PrintExpress"} target="_blank" rel="noreferrer">WhatsApp</a>
 
             <AuthButtons onLogin={handleLogin} onLogout={handleLogout} />
           </div>
