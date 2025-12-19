@@ -225,3 +225,31 @@ body{
 .cat-pill:hover {
   background: #e2e8f0;
 }
+/* 🔥 Force header above everything */
+.header {
+  z-index: 9999 !important;
+  background: #ffffff !important;
+  position: sticky;
+  top: 0;
+}
+
+/* 🔥 Push hero/banner BEHIND header */
+.hero,
+.hero-inner,
+.hero img {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* 🔥 Ensure logo/menu/search are visible */
+.brand,
+.header svg,
+.header button svg {
+  color: #000 !important;
+  stroke: #000 !important;
+}
+
+.search-box {
+  position: relative;
+  z-index: 99999; /* ensure you can click on it */
+}

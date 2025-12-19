@@ -201,12 +201,12 @@ export default function Footer() {
             <div>
               <h3 className="footer-heading">Contact Us</h3>
 
-              <p className="contact-item">📞 +91 8826615465</p>
+              <p className="contact-item">📞 +91 8826515465</p>
               <p className="contact-item">✉️ printexpress391@gmail.com</p>
               <p className="contact-item">📍 C-391, Sector-10, Noida – 201301</p>
 
               <a
-                href="https://wa.me/918826615465"
+                href="https://wa.me/918826515465"
                 target="_blank"
                 className="whatsapp-btn"
               >
