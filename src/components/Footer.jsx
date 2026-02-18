@@ -201,7 +201,7 @@ export default function Footer() {
             <div>
               <h3 className="footer-heading">Contact Us</h3>
 
-              <p className="contact-item">📞 +91 8826515465</p>
+              <p className="contact-item">📞 +91 7827663009</p>
               <p className="contact-item">✉️ luckyprinters@gmail.com</p>
               <p className="contact-item">📍 C-103, Sector-10, Noida – 201301</p>
 
