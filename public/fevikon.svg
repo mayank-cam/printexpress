@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="25%" stop-color="#FFC300"/>
+      <stop offset="50%" stop-color="#FFB000"/>
+      <stop offset="75%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFF5B7"/>
+    </linearGradient>
+
+    <!-- Shine Effect -->
+    <radialGradient id="shine" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="#0F0F0F"/>
+
+  <!-- Gold Circle Border -->
+  <circle cx="150" cy="150" r="135" fill="none" stroke="url(#goldGradient)" stroke-width="8"/>
+
+  <!-- Calligraphic LP -->
+  <text
+    x="150"
+    y="190"
+    text-anchor="middle"
+    font-size="140"
+    font-family="Brush Script MT, cursive"
+    fill="url(#goldGradient)"
+    font-weight="bold"
+  >
+    LP
+  </text>
+
+  <!-- Shine Overlay -->
+  <circle cx="150" cy="150" r="135" fill="url(#shine)" />
+</svg>
