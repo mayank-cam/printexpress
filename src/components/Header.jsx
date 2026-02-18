@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <header className="header" role="banner">
       <div className="header-inner">
-        <a className="brand" href="/">PrintExpress</a>
+        <a className="brand" href="/">LuckyPrinters</a>
 
         <div style={{display:"flex", alignItems:"center", gap:12}}>
           <div className="search-box" role="search" aria-label="Search products">

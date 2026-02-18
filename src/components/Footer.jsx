@@ -158,7 +158,7 @@ export default function Footer() {
 
             {/* Branding */}
             <div>
-              <h2 className="footer-title">PrintExpress</h2>
+              <h2 className="footer-title">LuckyPrinters</h2>
               <p className="footer-sub">DIGITAL • OFFSET • SCREEN PRINTING</p>
 
               <p className="footer-text">
@@ -202,11 +202,11 @@ export default function Footer() {
               <h3 className="footer-heading">Contact Us</h3>
 
               <p className="contact-item">📞 +91 8826515465</p>
-              <p className="contact-item">✉️ printexpress391@gmail.com</p>
-              <p className="contact-item">📍 C-391, Sector-10, Noida – 201301</p>
+              <p className="contact-item">✉️ luckyprinters@gmail.com</p>
+              <p className="contact-item">📍 C-103, Sector-10, Noida – 201301</p>
 
               <a
-                href="https://wa.me/918826515465"
+                href="https://wa.me/917827663009"
                 target="_blank"
                 className="whatsapp-btn"
               >
@@ -219,7 +219,7 @@ export default function Footer() {
           <div className="footer-divider"></div>
 
           <div className="footer-bottom">
-            © {new Date().getFullYear()} PrintExpress. All rights reserved.
+            © {new Date().getFullYear()} LuckyPrinters. All rights reserved.
           </div>
 
         </div>

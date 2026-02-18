@@ -40,7 +40,7 @@ export default function Home() {
       <section className="hero">
         <div className="main-container hero-inner">
           <img
-            alt="PrintExpress Banner"
+            alt="LuckyPrinters Banner"
             src="/banner.png"
             style={{
               width: "100%",
@@ -172,7 +172,7 @@ export default function Home() {
       {/* WhatsApp floating button */}
       <a
         className="whatsapp-fab"
-        href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20want%20to%20order"
+        href="https://wa.me/917827663009?text=Hi%20I%20want%20to%20order"
         target="_blank"
         rel="noreferrer"
       >
